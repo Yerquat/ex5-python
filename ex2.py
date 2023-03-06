@@ -8,9 +8,12 @@
 # 2 2
 #     4 
 
-def summ(a,b):
-    s = a + b
-    return s
+def summ(a, b):
+    s = 1
+    if b > 0:
+        s = s + summ(a, b-1)
+        return s
+    return a
 a = int(input())
 b = int(input())
 print(summ(a, b))
