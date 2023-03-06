@@ -9,9 +9,9 @@
 #     4 
 
 def summ(a, b):
-    s = 1
+    # s = 1
     if b > 0:
-        s = s + summ(a, b-1)
+        s = 1 + summ(a, b-1)  # здесь вместо "1" было "s"
         return s
     return a
 a = int(input())
